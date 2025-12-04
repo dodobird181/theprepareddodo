@@ -230,9 +230,8 @@ section {
 }
 
 .hero-logo {
-    width: 200px;
+    width: 333px;
     height: auto;
-    margin: 0 auto 2rem;
     filter: none;
     padding: 1rem;
     background: var(--white);
@@ -240,7 +239,7 @@ section {
 
 .hero h1 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 3.5rem;
+    font-size: 5rem;
     font-weight: 900;
     color: var(--white);
     margin-bottom: 1.5rem;
@@ -329,9 +328,9 @@ section {
 
 .hero.hero-asymmetric .hero-logo {
     margin: 0 0 3rem 0;
-    width: 282px;
-    top: 7rem;
-    left: 5rem;
+    width: 400px;
+    top: 20rem;
+    left: 8rem;
     position: relative;
     z-index: 2;
     border: none;
@@ -340,7 +339,7 @@ section {
 
 .hero.hero-asymmetric h1 {
     margin-bottom: 2rem;
-    max-width: 482px;
+    max-width: 435px;
     position: relative;
     z-index: 2;
 }
