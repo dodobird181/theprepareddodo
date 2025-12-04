@@ -8,9 +8,9 @@
     --brutal-accent: #ff0000; */
 
      /* Lime Green Brutalist Palette */
-    --brutal-dark: #000400;      /* Near black */
-    --brutal-light: #f5f5f0;      /* White */
-    --brutal-accent: #008000;     /* Bright lime green */
+    --brutal-dark: #574D45;      /* Near black */
+    --brutal-light: #FFF7E4;      /* White */
+    --brutal-accent: #98D2EB;     /* Bright lime green */
 
     /* Jack-o-lantern */  
     /* --brutal-dark: #F7B801;
@@ -222,7 +222,7 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;
     position: relative;
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
 }
 
 .hero::after {
@@ -234,33 +234,33 @@ section {
     height: auto;
     margin: 0 auto 2rem;
     filter: none;
-    border: var(--border);
     padding: 1rem;
     background: var(--white);
 }
 
 .hero h1 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
     color: var(--white);
     margin-bottom: 1.5rem;
     letter-spacing: -2px;
-    line-height: 1;
+    line-height: 1.1;
     text-shadow: 6px 6px 0 var(--primary-color);
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: var(--white);
     max-width: 650px;
     margin: 0 auto;
-    font-weight: 900;
-    line-height: 1.4;
+    font-weight: 700;
+    line-height: 1.5;
     background: var(--primary-color);
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
     border: var(--border);
     border-color: var(--white);
+    text-transform: none;
 }
 
 /* ========================================== */
@@ -319,7 +319,7 @@ section {
 .hero.hero-asymmetric {
     text-align: left;
     margin-top: 2rem;
-    border-top: var(--border);
+    /* border-top: var(--border); */
     padding: 0rem 2rem 3rem 4rem;
     display: flex;
     flex-direction: column;
@@ -491,10 +491,10 @@ section {
 .services h2 {
     font-family: 'Arial Black', sans-serif;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     font-weight: 900;
     color: var(--primary-color);
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     position: relative;
     padding-bottom: 1rem;
     letter-spacing: -2px;
@@ -516,13 +516,15 @@ section {
 
 .service-card {
     background: var(--white);
-    padding: 2.5rem;
+    padding: 1.5rem 1.75rem 1.75rem;
     border-radius: 0;
     box-shadow: none;
     border: var(--border);
     transition: all 0.1s ease;
     position: relative;
     overflow: visible;
+    display: flex;
+    flex-direction: column;
 }
 
 .service-card::before {
@@ -542,8 +544,8 @@ section {
 .service-card h3 {
     font-family: 'Arial Black', sans-serif;
     color: var(--accent-color);
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: -1px;
     line-height: 1.2;
@@ -551,9 +553,10 @@ section {
 
 .service-card p {
     color: var(--primary-color);
-    line-height: 1.4;
-    font-size: 0.85rem;
-    font-weight: 700;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: none;
 }
 
 /* Process Section */
@@ -562,16 +565,17 @@ section {
     margin: 0 -2rem;
     padding: 5rem 2rem;
     border-top: var(--border);
+    border-top-style: dotted;
     border-bottom: none;
 }
 
 .process h2 {
     font-family: 'Arial Black', sans-serif;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     font-weight: 900;
     color: var(--primary-color);
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
     letter-spacing: -2px;
     z-index: 10;
     position: relative;
@@ -592,9 +596,11 @@ section {
     min-width: 200px;
     background: var(--light-bg);
     border: var(--border);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.75rem;
     position: relative;
     transition: all 0.1s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .process-step:hover {
@@ -604,28 +610,29 @@ section {
 
 .step-number {
     font-family: 'Arial Black', sans-serif;
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 900;
     color: var(--accent-color);
     line-height: 1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
     letter-spacing: -2px;
 }
 
 .process-step h3 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 900;
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem;
     letter-spacing: -1px;
 }
 
 .process-step p {
-    font-size: 0.8rem;
-    line-height: 1.4;
+    font-size: 0.95rem;
+    line-height: 1.55;
     color: var(--primary-color);
-    font-weight: 700;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .process-arrow {
@@ -650,10 +657,10 @@ section {
 
 .about h2 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.75rem;
     font-weight: 900;
     color: var(--accent-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
     position: relative;
     padding-bottom: 1rem;
     letter-spacing: -2px;
@@ -669,10 +676,11 @@ section {
 .about p {
     max-width: 750px;
     margin: 0 auto;
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 1.05rem;
+    line-height: 1.65;
     color: var(--white);
-    font-weight: 700;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .about a {
@@ -705,7 +713,7 @@ section {
 
 .contact h2 {
     font-family: 'Arial Black', sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     margin-bottom: 1rem;
     position: relative;
@@ -714,9 +722,10 @@ section {
 }
 
 .contact p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 2.5rem;
-    font-weight: 700;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .email-link {
@@ -792,7 +801,7 @@ footer {
     top: -100px;
     left: -50px;
     width: 150px;
-    height: 120px;
+    /* height: 120px; */
     pointer-events: none;
     z-index: 5;
 }
