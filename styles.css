@@ -936,7 +936,7 @@ footer {
         padding: 1rem 1.5rem;
         white-space: normal;
         word-break: break-word;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .process-flow {
