@@ -432,12 +432,12 @@
                     void footprint.offsetWidth;
 
                     // Add randomness to position and rotation
-                    const baseTop = index * 20;
-                    const baseLeft = index * 20;
+                    const baseTop = index * 25;
+                    const baseLeft = index * 25;
 
-                    // Random offset: +/- 10px for natural variation
-                    const randomTopOffset = (Math.random() - 0.5) * 5;
-                    const randomLeftOffset = (Math.random() - 0.5) * 5;
+                    // Random offset for natural variation
+                    const randomTopOffset = Math.random() * 5;
+                    const randomLeftOffset = Math.random() * 5;
 
                     footprint.style.top = `${baseTop + randomTopOffset}px`;
                     footprint.style.left = `${baseLeft + randomLeftOffset}px`;
@@ -460,7 +460,7 @@
                         // Progressive opacity: 80%, 90%, 100%
                         const opacities = [0.8, 0.9, 1.0];
                         footprint.style.opacity = opacities[index];
-                    }, index * 300);
+                    }, index * 400);
 
                     animationTimeouts.push(timeout);
                 });
