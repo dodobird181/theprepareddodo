@@ -474,16 +474,18 @@ section {
 
 @media (max-width: 480px) {
     .hero.hero-asymmetric .hero-logo {
-        width: 244px;
-        margin-top: 9rem;
-        margin-left: 14rem;
-        margin-bottom: -17rem;
+        width: 219px;
+        margin-top: 10rem;
+        margin-left: 6rem;
+        margin-bottom: -15rem;
     }
 
     .hero.hero-asymmetric h1 {
-        font-size: 3.5rem;
-        margin-left: 3.5rem;
+        font-size: 3rem;
+        margin-left: 2.5rem;
         margin-top: 4rem;
+        max-width: 332px;
+        text-align: left;
     }
 
     .hero.hero-asymmetric .tagline {
