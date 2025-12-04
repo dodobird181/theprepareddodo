@@ -811,16 +811,16 @@ footer {
 
 .footprint {
     position: absolute;
-    width: 50px;
-    height: 75px;
+    width: 30px;
+    height: auto;
     color: var(--accent-color);
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Stagger footprints to look like walking steps */
+/* Stagger footprints to look like walking steps
 /* Reversed order - walking FROM top-left TOWARDS the card */
-.footprint:nth-child(1) {
+/* .footprint:nth-child(1) {
     top: 10px;
     left: 10px;
 }
@@ -833,7 +833,7 @@ footer {
 .footprint:nth-child(3) {
     top: 40px;
     left: 40px;
-}
+} */
 
 /* Rotate footprints to point towards bottom-right (towards card) */
 .footprint-left {

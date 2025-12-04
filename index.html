@@ -427,16 +427,17 @@
                 // Reset animation by removing and re-adding class
                 footprints.forEach((footprint, index) => {
                     footprint.classList.remove('animate', 'fade-out');
+
                     // Force reflow to restart animation
                     void footprint.offsetWidth;
 
                     // Add randomness to position and rotation
-                    const baseTop = -250 + (index * 45);
-                    const baseLeft = 0 + (index * 45);
+                    const baseTop = index * 20;
+                    const baseLeft = index * 20;
 
                     // Random offset: +/- 10px for natural variation
-                    const randomTopOffset = (Math.random() - 0.5) * 20;
-                    const randomLeftOffset = (Math.random() - 0.5) * 20;
+                    const randomTopOffset = (Math.random() - 0.5) * 5;
+                    const randomLeftOffset = (Math.random() - 0.5) * 5;
 
                     footprint.style.top = `${baseTop + randomTopOffset}px`;
                     footprint.style.left = `${baseLeft + randomLeftOffset}px`;
@@ -444,7 +445,7 @@
                     // Add random rotation variation to base rotation
                     const isLeft = index % 2 === 0;
                     const baseRotation = isLeft ? 150 : 120;
-                    const randomRotation = (Math.random() - 0.5) * 20; // +/- 10 degrees
+                    const randomRotation = (Math.random() - 0.5) * 10; // +/- 10 degrees
 
                     // Store rotation for this footprint
                     footprint.dataset.rotation = baseRotation + randomRotation;
@@ -456,8 +457,8 @@
                     const timeout = setTimeout(() => {
                         footprint.classList.add('animate');
                         footprint.style.transform = `rotate(${footprint.dataset.rotation}deg) scale(1)`;
-                        // Progressive opacity: 30%, 60%, 100%
-                        const opacities = [0.3, 0.6, 1.0];
+                        // Progressive opacity: 80%, 90%, 100%
+                        const opacities = [0.8, 0.9, 1.0];
                         footprint.style.opacity = opacities[index];
                     }, index * 300);
 
