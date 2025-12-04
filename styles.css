@@ -437,14 +437,17 @@ section {
 
     .hero.hero-asymmetric .hero-logo {
         position: static;
-        width: 180px;
-        margin: 0 auto 2rem;
+        width: 265px;
+        margin-top: 9rem;
+        margin-bottom: -13rem;
+        margin-left: 15rem;
     }
 
     .hero.hero-asymmetric h1 {
-        font-size: 2.5rem;
-        max-width: 100%;
+        font-size: 3.5rem;
+        max-width: 400px;
         margin-bottom: 1.5rem;
+        left: -3rem;
     }
 
     .hero.hero-asymmetric .tagline {
@@ -471,11 +474,16 @@ section {
 
 @media (max-width: 480px) {
     .hero.hero-asymmetric .hero-logo {
-        width: 140px;
+        width: 244px;
+        margin-top: 9rem;
+        margin-left: 14rem;
+        margin-bottom: -17rem;
     }
 
     .hero.hero-asymmetric h1 {
-        font-size: 2rem;
+        font-size: 3.5rem;
+        margin-left: 3.5rem;
+        margin-top: 4rem;
     }
 
     .hero.hero-asymmetric .tagline {
