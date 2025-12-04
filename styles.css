@@ -314,6 +314,11 @@ section {
     padding: 1.5rem 2.5rem;
 }
 
+.hero-header-logo-container {
+    margin-top: -12rem;
+    margin-left: 2rem;
+}
+
 /* Layout 4: Asymmetric (Logo Top-Left, Content Offset) */
 .hero.hero-asymmetric {
     text-align: left;
@@ -329,7 +334,7 @@ section {
 .hero.hero-asymmetric .hero-logo {
     margin: 0 0 3rem 0;
     width: 400px;
-    top: 20rem;
+    top: 20.4rem;
     left: 8rem;
     position: relative;
     z-index: 2;
