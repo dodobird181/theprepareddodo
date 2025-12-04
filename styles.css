@@ -490,6 +490,14 @@ section {
         font-size: 0.9rem;
         padding: 0.875rem 1.25rem;
     }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .service-card{
+        max-width: 100%;
+    }
 }
 
 /* Services Section */
@@ -956,13 +964,3 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    /* .hero h1 {
-        font-size: 1.8rem;
-        text-shadow: 3px 3px 0 var(--primary-color);
-    } */
-
-    .hero-logo {
-        width: 120px;
-    }
-}
