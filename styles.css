@@ -802,7 +802,7 @@ footer {
 .footprint-container {
     position: absolute;
     top: -204px;
-    left: -82px;
+    left: -110px;
     width: 150px;
     /* height: 120px; */
     pointer-events: none;
@@ -811,7 +811,7 @@ footer {
 
 .footprint {
     position: absolute;
-    width: 30px;
+    width: 40px;
     height: auto;
     color: var(--accent-color);
     opacity: 0;
